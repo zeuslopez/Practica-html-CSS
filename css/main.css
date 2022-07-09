@@ -1,0 +1,65 @@
+:root {
+    /* definición variable */
+    --main-primary-color: #00838f;
+    --secondary-font-color: #ffffff;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif; 
+  }
+
+body {
+  font-size: 16px;
+}
+.footer {
+  padding-top: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+.main-bg {
+    background-color: var(--main-primary-color);
+    color: var(--secondary-font-color);
+  }
+
+  /*  ANIMACIONES de links navbar */
+
+.navbar-link[type="submit"]:hover[type="submit"]:hover {
+    animation: example 5s linear ;
+  }
+
+/* Configuracion de CARRUSEL */
+
+
+  .carousel-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-dot {
+    background-color: #bbe3e3;
+    width: 16px;
+    height: 16px;
+    display: block;    /* IMPORTANTE para que se vea como un bloque y no texto */
+    border-radius: 50%;  /* circulitos del slider */
+    margin: 5px;
+  
+  }
+  
+  .carousel-slides > div {
+    width: 100%;
+    background-color: rgb(36, 35, 35);
+    color: var(--secondary-font-color);
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; /* textos centrados */
+  }
+  
+  .carousel-slides {
+    width: 100vw;
+    height: 30vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;  /* lo paso a visualizacion en columna */
+    flex-wrap: wrap;  /* al hacerlo warp lo comprime mostrando solo uno de ellos */
+  }
