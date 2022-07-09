@@ -22,6 +22,18 @@ body {
 
   /*  ANIMACIONES de links navbar */
 
+.navbar {
+    padding: 10px 20px;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navbar-link[type="submit"]:hover[type="submit"]:hover {
     animation: example 5s linear ;
   }
