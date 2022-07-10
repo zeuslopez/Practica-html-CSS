@@ -13,41 +13,48 @@
 <!-- Encabedado y navbar -->
 
     <header class="header">
+        <div id="Inicio" class ="logo-container">
+            <picture>
+                <source
+                media="(min-width: 400px)"
+                srcset="https://zeuslopez.github.io/Practica-html-CSS/imagenes/lorem640.png 6x"
+                >
+                <source
+                media="(min-width: 600px)"
+                srcset="https://zeuslopez.github.io/Practica-html-CSS/imagenes/lorem1280.png 6x"
+                >
+                <img src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/objetivo.png" alt="logo">
+            </picture>
+        </div>
+    </header>  
         
+       
+    <section class="navbar">  
         <nav class="navbar main-bg">
             
-            <div id="Inicio" class ="logo-container">
-                <picture>
-                    <source
-                    media="(min-width: 400px)"
-                    srcset="https://zeuslopez.github.io/Practica-html-CSS/imagenes/lorem640.png 6x"
-                    >
-                    <source
-                    media="(min-width: 600px)"
-                    srcset="https://zeuslopez.github.io/Practica-html-CSS/imagenes/lorem1280.png 6x"
-                    >
-                    <img src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/objetivo.png" alt="logo">
-                </picture>
-                
-
-            </div>
-            <section class="botones-navbar">
-                <div>
-                    <span class="navbar-link" href="#Inicio"> Inicio </span>
+                <div class="inicio">
+                    <span class="navbar-link"> 
+                        <a href="#Inicio">Inicio</a>
+                    </span>
                 </div>
-                <div>
-                    <span class="navbar-link" href="#Proyectos"> Proyectos </span>
+                <div class="proyectos">
+                    <span class="navbar-link">
+                        <a href="#Proyectos"> Proyectos </a>
+                    </span>
                 </div>
-                <div>
-                    <span class="navbar-link" href="#Skills"> Skills </span>
+                <div class="skills">
+                    <span class="navbar-link"> 
+                        <a href="#Skills">Skills</a>
+                    </span>
                 </div>
-                <div>
-                    <span class= "navbar-link" href="#Contacto"> Contacto</span>
-                
+                <div class="contactos">
+                    <span class= "navbar-link">
+                        <a href="#Contacto">Contacto</a>
+                    </span>
                 </div>
-            </section>
+            
         </nav>
-    </header>
+    </section>
 
 <!-- carrusel -->
 <section class="carousel-container">
@@ -71,21 +78,72 @@
 
 <main>
 <!-- SKILLS -->
-<div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit labore deserunt, delectus nemo cumque quis possimus asperiores tempora iusto voluptatem totam beatae nesciunt laudantium libero mollitia, amet enim quae et.
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit consequuntur fugit incidunt corporis quod qui, atque quasi voluptatum non dolores blanditiis velit aliquid eligendi, ex natus quas id nesciunt facilis!lorem1280
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto consequuntur id obcaecati voluptate accusamus nesciunt aliquid! Eaque, optio consequuntur. Dolorum temporibus impedit expedita provident totam perferendis natus necessitatibus quidem.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit labore deserunt, delectus nemo cumque quis possimus asperiores tempora iusto voluptatem totam beatae nesciunt laudantium libero mollitia, amet enim quae et.
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit consequuntur fugit incidunt corporis quod qui, atque quasi voluptatum non dolores blanditiis velit aliquid eligendi, ex natus quas id nesciunt facilis!lorem1280
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto consequuntur id obcaecati voluptate accusamus nesciunt aliquid! Eaque, optio consequuntur. Dolorum temporibus impedit expedita provident totam perferendis natus necessitatibus quidem.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit labore deserunt, delectus nemo cumque quis possimus asperiores tempora iusto voluptatem totam beatae nesciunt laudantium libero mollitia, amet enim quae et.
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit consequuntur fugit incidunt corporis quod qui, atque quasi voluptatum non dolores blanditiis velit aliquid eligendi, ex natus quas id nesciunt facilis!lorem1280
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto consequuntur id obcaecati voluptate accusamus nesciunt aliquid! Eaque, optio consequuntur. Dolorum temporibus impedit expedita provident totam perferendis natus necessitatibus quidem.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit labore deserunt, delectus nemo cumque quis possimus asperiores tempora iusto voluptatem totam beatae nesciunt laudantium libero mollitia, amet enim quae et.
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit consequuntur fugit incidunt corporis quod qui, atque quasi voluptatum non dolores blanditiis velit aliquid eligendi, ex natus quas id nesciunt facilis!lorem1280
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto consequuntur id obcaecati voluptate accusamus nesciunt aliquid! Eaque, optio consequuntur. Dolorum temporibus impedit expedita provident totam perferendis natus necessitatibus quidem.
+<div class="skills">
+    SKILLS
+    
 </div>
-<!-- Contact form -->
+<!-- Contact form & video-->
+<section id="Contacto" class="contenido">
+    <div class="form">
+        <form action="/register" novalidate method="post">
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input  type="text" id="name" name="name" placeholder="Escribe tu nombre" required maxlength="15">
+            </div>
+            <div class="field">
+              <label for="surname">Apellidos</label>
+              <input  type="text" id="surname" name="surname" placeholder="Escribe tu apellido" required maxlength="35">
+            </div>
+            <div class="field">
+              <label for="phone">Teléfono</label>
+              <input  type="tel" id="phone" placeholder="Teléfono" pattern="[0-9]+" maxlength="12" required>
+            </div>
+            <div class="field">
+              <label for="github">Github tag</label>
+              <input  type="text" id="github" name="github" maxlength="25" pattern="^@[^\s]+" required>
+            </div>
+            <br>
+            <div class="radio-button">
+                <legend>¿Cómo nos has conocido?</legend>
+                <br>
+                <div class="radio-pick">
+                    <label>
+                    <input type="radio" name="seleccion" value="Universidad"> Universidad
+                    </label>
+                </div>
+                <div class="radio-pick">
+                    <label>
+                    <input type="radio" name="seleccion" value="Keepcoding-ko"> Keepcoding Kick-off
+                    </label>
+                </div>
+                <div class="radio-pick">
+                    <label>
+                    <input type="radio" name="seleccion" value="Colegio"> Colegio
+                    </label>
+                </div>
+                <div class="radio-pick"></div>
+                    <label>
+                    <input type="radio" name="seleccion" value="Github"> En Github
+                    </label>
+                </div>
+            </div>
+            <div class="descripcion">
+                <label for="descripcion"></label>
+                <textarea id="descripcion" name="Descripcion" placeholder="Deja tu comentario" ></textarea>
+            </div>
+            <div class="registro">
+            <input type="submit" value="Register">
+            </div>
+          </form>
+
+
+        </form>
+    </div>
+</section>
+<!-- proyectos en grid -->
+<div class="proyectos-grid">
+
+</div>
 
 </main>
 
@@ -95,24 +153,27 @@
         <img 
         src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/twitter.png" 
         alt="twitter"
+        width="50" height="50"
         >
-        <a rel="noopener noreferrer" href="https://twitter.com/zeuslopez"></a>
+        <a href="https://twitter.com/zeuslopez" rel="noopener noreferrer" ></a>
     </div>
 
     <div class="image-container">
         <img 
         src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/linkedin.png" 
         alt="linkedin"
+        width="50" height="50"
         >
-        <a rel="noopener noreferrer" href="https://www.linkedin.com/in/jorgelopezweb/"></a>
+        <a  href="https://www.linkedin.com/in/jorgelopezweb/" rel="noopener noreferrer"></a>
     </div>
 
     <div class="image-container">
         <img 
         src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/youtube.png" 
         alt="youtube"
+        width="50" height="50"
         >
-        <a rel="noopener noreferrer" href="https://www.youtube.com/channel/UCldOGHPgEYlW1PCdh1TXvPQ"></a>
+        <a  href="https://www.youtube.com/channel/UCldOGHPgEYlW1PCdh1TXvPQ" rel="noopener noreferrer"></a>
     </div>
 </footer>
     

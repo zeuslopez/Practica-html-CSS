@@ -8,12 +8,17 @@
 
 body {
   font-size: 16px;
+  padding-bottom: 5em;
+  min-height: 100vh;
 }
-.footer {
-  padding-top: 10px;
-  text-align: center;
-  font-style: italic;
+a:visited {
+    color: #ffffff;
+  }
+
+.header {
+    position: sticky;
 }
+
 
 .main-bg {
     background-color: var(--main-primary-color);
@@ -21,31 +26,71 @@ body {
   }
 
   /*  ANIMACIONES de links navbar */
-.header {
-    position: sticky;
-}
+
 .navbar {
     padding: 10px 20px;
+    width: 100%;
     position: sticky;
     top: 0;
     right: 0;
     left: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+
+}
+
+.form {
+    padding: 10px 20px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.field {
+    justify-content: start;
+    margin: auto;
+    padding: 2px;
+}
+.radio-pick {
+    justify-content: start;
+    margin: auto;
+    padding: 2px;
+}
+.descripcion{
+    padding: 10px 20px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: start
+}
+#descripcion{
+    width: 200px; 
+    height: 100px
+}
+.registro{
+    padding: 10px 20px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: start
 }
 
 .navbar-link {
     background-color: #00838f;
     border-radius: 5%;
     margin: 10px;
-}
-.botones-navbar {
     top: 0;
     right: 0;
     left: 0;
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
 }
 
@@ -109,24 +154,22 @@ body {
 
   /* defino el grid del FOOTER*/
   .footer {
-    display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    gap: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .image-container {
     width: 100%;
-    max-height: 160px;
+    max-height: 100px;
     overflow: hidden;
   }
   
   
-  .image-container img{
-    width: 100%;
-  }
-  
   /*  RESPONSIVE DESKTOP  */
-  @media screen and (min-width: 600px) {
+  @media screen and (max-width: 600px) {
   
     /* solo añadir las columnas que se añaden */
     /*  .anime-content .show-items {
@@ -137,10 +180,15 @@ body {
     display: block;
     justify-content: space-between;
     }
+    .footer {
+        display: block;
+        justify-content: space-between;
+        }
   
    .image-container {
     display: flex;
     justify-content:space-between
     }
   
+
   }
