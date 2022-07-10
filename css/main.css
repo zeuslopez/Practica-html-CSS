@@ -21,10 +21,11 @@ body {
   }
 
   /*  ANIMACIONES de links navbar */
-
+.header {
+    position: sticky;
+}
 .navbar {
     padding: 10px 20px;
-    /* position: fixed; */
     position: sticky;
     top: 0;
     right: 0;
@@ -34,13 +35,42 @@ body {
     align-items: center;
 }
 
-.navbar-link[type="submit"]:hover[type="submit"]:hover {
-    animation: example 5s linear ;
+.navbar-link {
+    background-color: #00838f;
+    border-radius: 5%;
+    margin: 10px;
+}
+.botones-navbar {
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.navbar-link:hover {
+    animation: hover-link 0.4s linear; 
+}  
+
+  @keyframes hover-link {
+    0% {
+      background-color: rgb(15, 48, 5);
+        opacity: 50%;
+    }
+    50% {
+      background-color: #032629;
+      fill-opacity: 75%;
+    }
+    100% {
+      background-color: #032629;
+      opacity: 100%;
+
+    }
+  
   }
 
 /* Configuracion de CARRUSEL */
-
-
   .carousel-links {
     display: flex;
     justify-content: center;
@@ -74,4 +104,43 @@ body {
     display: flex;
     flex-direction: column;  /* lo paso a visualizacion en columna */
     flex-wrap: wrap;  /* al hacerlo warp lo comprime mostrando solo uno de ellos */
+  }
+
+
+  /* defino el grid del FOOTER*/
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 20px;
+  }
+  
+  .image-container {
+    width: 100%;
+    max-height: 160px;
+    overflow: hidden;
+  }
+  
+  
+  .image-container img{
+    width: 100%;
+  }
+  
+  /*  RESPONSIVE DESKTOP  */
+  @media screen and (min-width: 600px) {
+  
+    /* solo añadir las columnas que se añaden */
+    /*  .anime-content .show-items {
+      grid-template-columns: repeat(5,1fr);
+    }*/
+  
+    .navbar {
+    display: block;
+    justify-content: space-between;
+    }
+  
+   .image-container {
+    display: flex;
+    justify-content:space-between
+    }
+  
   }
