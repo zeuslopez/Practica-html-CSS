@@ -14,18 +14,21 @@
 
     <header class="header">
         <div id="Inicio" class ="logo-container">
-            <picture>
-                <source
-                media="(min-width: 400px)"
-                srcset="https://zeuslopez.github.io/Practica-html-CSS/imagenes/lorem640.png 6x"
-                >
+            <picture class="picture">
                 <source
                 media="(min-width: 600px)"
-                srcset="https://zeuslopez.github.io/Practica-html-CSS/imagenes/lorem1280.png 6x"
+                srcset="https://raw.githubusercontent.com/zeuslopez/Practica-html-CSS/main/imagenes/bigheader.jpg"
                 >
-                <img src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/objetivo.png" alt="logo">
+                <source
+                media="(min-width: 400px)"
+                srcset="https://raw.githubusercontent.com/zeuslopez/Practica-html-CSS/main/imagenes/midheader.jpg"
+                >
+                
+                <img src="https://raw.githubusercontent.com/zeuslopez/Practica-html-CSS/main/imagenes/lorem640.png" alt="logo"
+                >
             </picture>
         </div>
+        
     </header>  
         
        
@@ -60,7 +63,7 @@
 <section class="carousel-container">
     <div class="carousel-slides">
         <div class="gallery-cell" id="proyecto1"> 
-            <img src="https://raw.githubusercontent.com/zeuslopez/Practica-html-CSS/main/imagenes/Proyecto1.jpg" style="width:50%" alt="proyecto1pic">Proyecto 1
+            <img src="https://raw.githubusercontent.com/zeuslopez/Practica-html-CSS/main/imagenes/Proyecto1.jpg" style="width:50%" alt="proyecto1pic">
         </div>
         <div class="gallery-cell" id="proyecto2">
             <img src="https://raw.githubusercontent.com/zeuslopez/Practica-html-CSS/main/imagenes/proyecto2.jpg" style="width:50%" alt="proyecto2pic">
@@ -149,41 +152,53 @@
     </div>
 </section>
 <!-- proyectos en grid -->
-<div class="proyectos-grid">
+<section id="Proyectos" class="proyectos-grid">
+
+    <div class="proyecto1-grid" id="proyecto1"> 
+        <img src="https://raw.githubusercontent.com/zeuslopez/Practica-html-CSS/main/imagenes/Proyecto1.jpg" style="width:50%" alt="proyecto1pic">
+    </div>
+    <div class="proyecto2-grid" id="proyecto2">
+        <img src="https://raw.githubusercontent.com/zeuslopez/Practica-html-CSS/main/imagenes/proyecto2.jpg" style="width:50%" alt="proyecto2pic">
+    </div>
+    <div class="proyecto3-grid" id="proyecto3">
+        <img src="https://raw.githubusercontent.com/zeuslopez/Practica-html-CSS/main/imagenes/proyecto3.jpg" style="width:50%" alt="proyecto3pic">
+    </div>
+    <div class="proyecto4-grid" id="proyecto4">
+        <img src="https://raw.githubusercontent.com/zeuslopez/Practica-html-CSS/main/imagenes/proyecto4.jpg"  style="width:50%" alt="proyecto4pic">
+    </div>
 
 
-
-</div>
+</section>
 
 </main>
 
 <!-- Footer y link a redes -->
 <footer class="footer main-bg">
     <div class="image-container">
-        <img 
-        src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/twitter.png" 
+        <a href="https://twitter.com/zeuslopez" rel="noopener noreferrer" target="_blank">
+        <img src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/twitter.png" 
         alt="twitter"
         width="50" height="50"
-        >
-        <a href="https://twitter.com/zeuslopez" rel="noopener noreferrer" ></a>
+        />
+        </a>
     </div>
 
     <div class="image-container">
-        <img 
-        src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/linkedin.png" 
+        <a  href="https://www.linkedin.com/in/jorgelopezweb/" rel="noopener noreferrer" target="_blank">
+        <img src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/linkedin.png" 
         alt="linkedin"
         width="50" height="50"
-        >
-        <a  href="https://www.linkedin.com/in/jorgelopezweb/" rel="noopener noreferrer"></a>
+        />
+        </a>
     </div>
 
     <div class="image-container">
-        <img 
-        src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/youtube.png" 
+        <a href="https://www.youtube.com/channel/UCldOGHPgEYlW1PCdh1TXvPQ"  target="_blank" rel="noopener noreferrer">
+        <img src="https://zeuslopez.github.io/Practica-html-CSS/imagenes/youtube.png" 
         alt="youtube"
         width="50" height="50"
-        >
-        <a  href="https://www.youtube.com/channel/UCldOGHPgEYlW1PCdh1TXvPQ" rel="noopener noreferrer"></a>
+        />
+        </a>
     </div>
 </footer>
     

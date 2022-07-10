@@ -4,7 +4,13 @@
     font-size: 16px;
     font-family: 'Raleway', sans-serif; 
 }
-
+.h1{
+    font-size: 20px;
+    color: #00838f;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 body {
   font-size: 16px;
   padding-bottom: 5em;
@@ -23,6 +29,16 @@ a:visited {
     background-color: var(--main-primary-color);
     color: var(--secondary-font-color);
 } 
+.picture{
+    padding: 10px 20px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
 
 /* CSS NAVBAR incluye animaciones y links */
 
@@ -156,14 +172,50 @@ a:visited {
     height: 400px;
     margin-right: 10px;
     background: #8C8;
-  }
+}
+
+/* Proyectos en grid */
+
+.proyectos-grid{
+    display: grid;
+    align-content: center;
+    align-items: stretch;
+    grid-template-areas: 
+    'proy1 proy2'
+    'proy3 proy4'; 
+    grid-template-columns: 1fr 1fr;
+
+}
+.proyectos-grid > div {
+    border: 1px solid #ffffff;
+    padding: 2px;
+    align-content: center;
+    align-items: stretch;
+}
+
+.proyecto1-grid{
+    grid-area: proy1;
+}
+.proyecto2-grid{
+    grid-area: proy2;
+}
+.proyecto3-grid{
+    grid-area: proy3;
+}
+.proyecto4-grid{
+    grid-area: proy4;
+}
 
 
 /* CSS del FOOTER*/
 .footer {
+    padding: 10px 20px;
+    width: 100%;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -176,17 +228,24 @@ a:visited {
   
   
 /*  RESPONSIVE DESKTOP  */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   
     /* solo añadir las columnas que se añaden */
-    /*  .anime-content .show-items {
-      grid-template-columns: repeat(5,1fr);
-    }*/
+     /* .anime-content .show-items {
+      grid-template-columns: repeat(5,1fr);*/
+    
   
     .navbar {
-    display: block;
-    justify-content: space-between;
+        display: block;
+        flex-direction: column;
+        justify-content: space-between;
     }
+    .proyectos-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .footer {
         display: block;
         justify-content: space-between;
@@ -196,6 +255,8 @@ a:visited {
     display: flex;
     justify-content:space-between
     }
-  
+}
+
+@media screen and (max-width: 600px) {
 
 }
