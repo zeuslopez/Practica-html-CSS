@@ -4,13 +4,7 @@
     font-size: 16px;
     font-family: 'Raleway', sans-serif; 
 }
-.h1{
-    font-size: 20px;
-    color: #00838f;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
+
 body {
   font-size: 16px;
   padding-bottom: 5em;
@@ -23,22 +17,14 @@ a:visited {
 
 .header {
     position: sticky;
+    width: fit-content;
 }
 
 .main-bg{
     background-color: var(--main-primary-color);
     color: var(--secondary-font-color);
 } 
-.picture{
-    padding: 10px 20px;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-}
+
 
 /* CSS NAVBAR incluye animaciones y links */
 
@@ -85,49 +71,7 @@ a:visited {
   
 }
 
-/* CSS del FORMULARIO */
-.form {
-    padding: 10px 20px;
-    width: 50%;
-    top: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.field {
-    justify-content: start;
-    margin: auto;
-    padding: 2px;
-}
-.radio-pick {
-    justify-content: start;
-    margin: auto;
-    padding: 2px;
-}
-.descripcion{
-    padding: 10px 20px;
-    width: 50%;
-    top: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    justify-content: start
-}
-#descripcion{
-    width: 200px; 
-    height: 100px
-}
-.registro{
-    padding: 10px 20px;
-    width: 50%;
-    top: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    justify-content: start
-}
+
 
 /* CSS de CARRUSEL con truco FLEX*/
 .carousel-links {
@@ -174,17 +118,132 @@ a:visited {
     background: #8C8;
 }
 
+/* CSS de SKILL con Animacion */
+.skills-programacion {
+    align-items: center;
+    display: flex;
+    justify-items: center;
+}
+.progress-bar-container{
+    padding: 5px 5px;
+    width: 200px;
+    height: 35px;
+    background-color: #00838f;
+    border-radius: 5px;
+    margin: 2px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.progress-git{
+    width: 50%;
+    height: 100%;
+    left: 1px;
+}
+.progress-html{
+    width: 70%;
+    height: 100%;
+    left: 1px;
+}
+.progress-css{
+    width: 50%;
+    height: 100%;
+    left: 1px;
+}
+.progress-js{
+    width: 25%;
+    height: 100%;
+    left: 1px;
+}
+.percentage {
+    color: #bbe3e3;
+    font: bold;
+}
+
+.progress-bar-container::after {
+    animation: progressbar 0.4s infinite; 
+}  
+
+@keyframes progressbar{
+    0%{
+        background-color: #032629;    
+
+    }
+    100%{
+        background-color: #00838f;
+
+    }
+}
+.progress-git:hover{
+    animation: progressbar 5s linear ;
+}
+.progress-html:hover{
+    animation: progressbar 5s linear ;
+}
+.progress-css:hover{
+    animation: progressbar 5s linear ;
+}
+.progress-js:hover{
+    animation: progressbar 5s linear ;
+}
+
+
+
+
+/* CSS del FORMULARIO */
+.form {
+    padding: 10px 20px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.field {
+    justify-content: start;
+    margin: auto;
+    padding: 2px;
+}
+.radio-pick {
+    justify-content: start;
+    margin: auto;
+    padding: 2px;
+}
+.descripcion{
+    padding: 10px 20px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: start
+}
+#descripcion{
+    width: 200px; 
+    height: 100px
+}
+.registro{
+    padding: 10px 20px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: start
+}
+
 /* Proyectos en grid */
 
 .proyectos-grid{
+    padding: 10px 10px;
     display: grid;
-    align-content: center;
-    align-items: stretch;
+    align-items: center;
     grid-template-areas: 
     'proy1 proy2'
     'proy3 proy4'; 
     grid-template-columns: 1fr 1fr;
-
 }
 .proyectos-grid > div {
     border: 1px solid #ffffff;
@@ -240,6 +299,12 @@ a:visited {
         flex-direction: column;
         justify-content: space-between;
     }
+
+    .skills-programacion {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .proyectos-grid {
         display: flex;
         flex-direction: column;
