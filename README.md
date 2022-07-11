@@ -53,5 +53,4 @@ Igualmente , me hubiera gustado que el diseño fuera mas vistoso ademas de cumpl
 
 **Pantallazo My Portfolio**
 
-https://cdn.rawgit.com/zeuslopez/Practica-html-CSS/tree/main/imagenes/screenshotweb.png
-
+https://raw.githubusercontent.com/zeuslopez/Practica-html-CSS/main/imagenes/screenshotweb.png
